@@ -1,0 +1,33 @@
+name: HardID CI (Automated Guard)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/authorized-key/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: Syntax Check (Python Lint)
+      run: |
+        # 自动化语法检查，确保别人提交的代码没有低级语法错误
+        python -m py_compile *.py
+
+    - name: Security & Core Philosophy Reminder
+      run: |
+        echo "=========================================================="
+        echo "🔒 HardID Automated Guard: Checking incoming contribution..."
+        echo "🛡️ Reminder: Ensure NO data is uploaded to centralized clouds."
+        echo "🛡️ Reminder: Ensure compliance with Apache-2.0 License."
+        echo "=========================================================="
