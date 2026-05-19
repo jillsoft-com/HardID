@@ -15,6 +15,13 @@ The modern Internet (Web2) has imprisoned human identity and data inside the cen
 **HardID** is an open-source, peer-to-peer (P2P), hardware-centric computing and communication protocol. It turns personal hardware into the absolute "subject" and "ID" of the digital world. No central servers, no corporate censorship. Hardware is your account; hardware is your sovereignty.
 
 ### ⚡ Core Philosophy
+
+| Paradigm | Identity / Account | Data Storage | Censorship Risk |
+| :--- | :--- | :--- | :--- |
+| **Web2** | Phone / Email / OAuth | Centralized Cloud Server | **High** (Account bans, data leaks) |
+| **Web3** | Wallet (Token-centric) | Blockchain / IPFS | **Medium** (Financial speculation focus) |
+| **HardID** | **Hardware TPM / Private Key** | **100% Local Physical Device** | **Zero** (True P2P encryption) |
+
 1. **Hardware is Identity:** Abandon phone numbers, emails, and Big Tech OAuth. The asymmetric cryptographic private key stored securely in your hardware's TPM/Enclave is your globally unique ID.
 2. **Local First, Network Second:** All applications (IM, Mail, Local LLMs, Inputs, Docs) must store raw data locally on your physical device. 
 3. **Zero-Knowledge P2P:** All data transmissions occur directly between devices via encrypted P2P channels. No middleman can eavesdrop or censor.
@@ -24,12 +31,17 @@ The modern Internet (Web2) has imprisoned human identity and data inside the cen
 * **HardID-LLM:** A localized "Digital Twin" AI fed exclusively by your zero-knowledge local data bus.
 * **HardID-Input:** A privacy-first input method with a localized vector-association engine.
 
+### 🛠️ Technology Stack (Current & Planned)
+* **Core Logic:** Python (Asynchronous P2P Engine, Cryptography)
+* **Identity / Security:** Hardware-level TPM 2.0 / Secure Enclave integration
+* **Networking:** Pure P2P Protocol (Libp2p / Custom encrypted sockets)
+
 ---
 
 ## 🛡️ License & Copyright
 
 * **Copyright:** This project is initiated and maintained by **jillsoft-com (Lijun Jiang)**. All rights reserved.
-* **License:** This project is licensed under the Apache 2.0 License - see the [LICENSE](./LICENSE) file for details.
+* **License:** This project is licensed under the Apache 2.0 License - see the [LICENSE](./LICENSE) and [NOTICE](./NOTICE) files for details.
 * **Contact:** For architectural discussions or cooperation, please open an Issue or contact via GitHub Profile.
 
 ---
@@ -42,19 +54,31 @@ The modern Internet (Web2) has imprisoned human identity and data inside the cen
 **HardID** 是一个开源的、点对点的、以硬件为核心的计算与通信协议。它将个人硬件转化为数字世界的“绝对主体”与“身份 ID”。没有中央服务器，没有公司审查。硬件即账号，硬件即主权。
 
 ### ⚡ 核心哲学
+
+| 时代范式 | 身份 / 账号体系 | 数据存储位置 | 审查与安全风险 |
+| :--- | :--- | :--- | :--- |
+| **Web2** | 手机号 / 邮箱 / 大厂登录 | 巨头中央云端服务器 | **高**（封号、隐私泄露、数据被利用） |
+| **Web3** | 链上钱包（代币驱动） | 区块链 / IPFS 分布式 | **中**（重金融属性，轻日常隐私） |
+| **HardID** | **硬件安全芯片私钥** | **100% 本地物理设备** | **零**（端到端纯 P2P 加密，无法删帖） |
+
 1. **硬件即账号：** 彻底摒弃手机号、邮箱和第三方大厂登录。存储在硬件安全芯片（TPM/Enclave）中的非对称加密私钥，就是你全球唯一的 ID。
 2. **本地优先，网络次之：** 所有应用（即时通讯、邮件、本地大模型、输入法、文档）的原始数据必须 100% 存储在你的物理硬件上。
 3. **零知识 P2P：** 所有数据传输通过加密的 P2P 通道在设备之间直接进行，没有任何中间商能够窃听、拦截或删帖。
 
 ### 🚀 核心模块
-* **HardID-IM：** 真正的无服务器、点对点即时通讯系统。
+* **HardID-IM：** 真正的无服务器、点对点即时通讯系统（Alpha 原型阶段）。
 * **HardID-LLM：** 本地化的“数字孪生”AI，完全由你的本地零知识数据总线喂养。
 * **HardID-Input：** 隐私第一的输入法，拥有完全本地化的向量联想引擎。
+
+### 🛠️ 技术栈与规划
+* **核心底层：** Python (异步 P2P 引擎、密码学核心)
+* **安全认证：** 硬件级 TPM 2.0 / Secure Enclave 接口调用
+* **网络通信：** 纯点对点协议 (基于 Libp2p 理念 / 自定义加密套接字)
 
 ---
 
 ## 🛡️ 版权与许可证
 
 * **版权所有：** 本项目由 **jillsoft-com (Lijun Jiang)** 发起并持续维护。保留所有权利。
-* **许可证：** 本项目基于 Apache 2.0 许可证开源 - 详情请参阅 [LICENSE](./LICENSE) 文件。
+* **许可证：** 本项目基于 Apache 2.0 许可证开源 - 详情请参阅 [LICENSE](./LICENSE) 以及 [NOTICE](./NOTICE) 通知文件。
 * **联系方式：** 欢迎通过提交 Issue 或通过 GitHub Profile 页面与我们取得联系，共同探讨主权计算架构。
