@@ -29,7 +29,7 @@ The modern Internet (Web2) has imprisoned human identity and data inside the cen
 ## 🛡️ License & Copyright
 
 * **Copyright:** This project is initiated and maintained by **jillsoft-com (Lijun Jiang)**. All rights reserved.
-* **License:** This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+* **License:** This project is licensed under the Apache 2.0 License - see the [LICENSE](./LICENSE) file for details.
 * **Contact:** For architectural discussions or cooperation, please open an Issue or contact via GitHub Profile.
 
 ---
@@ -56,5 +56,5 @@ The modern Internet (Web2) has imprisoned human identity and data inside the cen
 ## 🛡️ 版权与许可证
 
 * **版权所有：** 本项目由 **jillsoft-com (Lijun Jiang)** 发起并持续维护。保留所有权利。
-* **许可证：** 本项目基于 MIT 许可证开源 - 详情请参阅 [LICENSE](./LICENSE) 文件。
+* **许可证：** 本项目基于 Apache 2.0 许可证开源 - 详情请参阅 [LICENSE](./LICENSE) 文件。
 * **联系方式：** 欢迎通过提交 Issue 或通过 GitHub Profile 页面与我们取得联系，共同探讨主权计算架构。
